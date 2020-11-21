@@ -12,8 +12,8 @@ class Allele:
         that S=0.75 and H=0.5. fitness(AA)=1, fitness(aa)=1-s=1-0.75=0.25,. 1-h(s)= 1-(0.5*0.75) = 1-0.375=0.625
         So, we have aa=0.25, Aa=0.625, AA=1
         
-        'HIGH DOMINANCE' IS ESSENTIALLY JUST 'THE DEGREE OF PHENOTYPIC SIMILARITY OF THE
-        'WEAK' HOMOZYGOTE (TYPICALLY REPRESENTED WITH LOWERCASE CHARACTERs) TO THE HETEROZYGOTE--
+        'DOMINANCE COEFF.' IS ESSENTIALLY JUST MEASURES 'THE DEGREE OF PHENOTYPIC SIMILARITY OF THE
+        'WEAK' HOMOZYGOTE (TYPICALLY REPRESENTED WITH LOWERCASE CHARACTERs) TO THE HETEROZYGOTE'--
         SO, A DOMINANCE SCORE OF "1" MEANS THE FOLLOWING:
         
         H=1 ---> [(AA--->A) & (Aa--->a) & (aa--->a)]   
@@ -25,18 +25,6 @@ class Allele:
         H=0 ---> [(AA--->A) & (Aa--->A) & (aa--->a)]
         
         i.e. the AA homozygote's phenotypic expression is no different from that of the "Aa" homozygote
-        
-        THESE TWO EXTREMES ARE THE BINARY MENDELIAN GENETICS THAT ARE TAUGHT TO MIDDLE-SCHOOLERS--
-        REALLY THOUGH, MOST TRAITS FOLLOW A CONTINUOUS LOGIC AND NOT A BINARY LOGIC--FOR EXAMPLE, TAKE HEIGHT:
-        THE CATEGORICAL BOUNDARY BETWEEN 'SHORT' AND 'TALL' IS NOT SHARP (unlike, for example, attached/detached
-        earlobes, or the widow's peak which are certainly bimodal (if not completely binary)). 
-        SAY FOR HEIGHT, THE DOMINANCE SCORE IS "0.5": THOSE WITH THE "TT" GENOTYPE WILL BE "TALL", THOSE WITH THE "tt"
-         WILL BE "SHORT", AND THOSE WITH genotype "Tt" WILL BE "INTERMEDIATE". 
-         tl:dr AS THE DOMINANCE SCORE APPROACHES 0.5, THE DISTRIBUTION BECOMES LESS
-        BIMODAL WITH RESPECT TO THE TRAIT IN QUESTION. AS IT APPROACHES 0 AND 1, IT APPROACHES A 
-        BERNOULLI/BINARY DISTRIBUTION
-        'WEAK' TRAIT CANCELS 'STRONG' TRAIT IN HETEROZYGOTE IF H=1
-        'STRONG' TRAIT CANCELS 'WEAK' TRAIT IN HEREROZYGOTE IF H=0
         """
         self.symbol=symbol.lower()
 
