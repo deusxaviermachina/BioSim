@@ -96,6 +96,9 @@ class Trait:
         plt.plot(X1, Y1, c=(0.5, 0, 1), label=self.name.upper() * 2)
         plt.plot(X2, Y2, c=(0.5, 1, 0), label=self.name.upper() + self.name.lower())
         plt.plot(X3, Y3, c=(0, 0.5, 1), label=self.name.lower() * 2)
+        plt.xlabel("Generation", fontsize=15)
+        plt.ylabel("Frequency"
+                   " (as % of total population)",fontsize=15)
         plt.legend()
         plt.title(f"""
         Selection: {self.s}
