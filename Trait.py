@@ -13,7 +13,7 @@ class Trait:
     h (i.e. the dominance coefficient), population size, and name
     2.) Have population mate to produce next generation
     3.) Plot genotype frequencies
-    3.) Repeat 1.), 2.), and 3.) for n generations
+    3.) Repeat 2.) and 3.) for new generation
     4.) Observe data
     
     """
