@@ -32,7 +32,7 @@ class Trait:
 
         """
         debugging mechanism to make sure that the ratio of the average frequency
-        of the three genotypes is approximately equal to
+        of the three genotypes (i.e. µ(AA) : µ(Aa) : µ(aa)) is approximately equal to
         1 : 1-s(h) : 1-s
         """
 
