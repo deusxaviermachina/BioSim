@@ -23,9 +23,9 @@ class Trait:
         aa = self.name[0].upper() + self.name[0].lower()
         Aa = self.name[0].lower() * 2
         AA_fitness = 1
-        Aa_fitness = 1 - self.h * self.s
+        Aa_fitness = 1 - (self.h * self.s)
         aa_fitness = 1 - self.s
-        population = random.choices([AA, Aa, aa], weights=[AA_fitness, Aa_fitness, aa_fitness], k=self.pop_size)
+        population = random.choices(["AA", "Aa", "aa"], weights=(AA_fitness, Aa_fitness, aa_fitness), k=self.pop_size)
         return population
 
     def get_average_frequencies(self, n_trials):
