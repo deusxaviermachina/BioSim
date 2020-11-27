@@ -6,8 +6,10 @@ a4=Trait(0.2, 0.8, "A",100)
 n_generations=1000
 dataset = a1.evolve(n_generations)
 #print(a1.get_average_frequencies(1000))
+
 a1.freq_plot(n_generations)
 a2.freq_plot(n_generations)
 a3.freq_plot(n_generations)
 a4.freq_plot(n_generations)
 
+print(a1.get_average_frequencies(100))
