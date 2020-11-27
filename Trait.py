@@ -33,7 +33,7 @@ class Trait:
         """
         debugging mechanism to make sure that the ratio of the average frequency
         of the three genotypes is approximately equal to
-        1 : 1-s(h) : 1-h
+        1 : 1-s(h) : 1-s
         """
 
         data = {"AA": 0, "aa": 0, "Aa": 0}
